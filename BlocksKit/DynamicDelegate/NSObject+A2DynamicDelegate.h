@@ -3,7 +3,11 @@
 //  BlocksKit
 //
 
+#ifdef BLOCKS_KIT_FRAMEWORK
 #import <BlocksKit/A2DynamicDelegate.h>
+#else
+#import "A2DynamicDelegate.h"
+#endif
 #import <Foundation/Foundation.h>
 
 /** The A2DynamicDelegate category to NSObject provides the primary interface

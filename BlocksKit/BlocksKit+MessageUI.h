@@ -25,5 +25,10 @@
 //  THE SOFTWARE.
 //
 
+#ifdef BLOCKS_KIT_FRAMEWORK
 #import <BlocksKit/MFMailComposeViewController+BlocksKit.h>
 #import <BlocksKit/MFMessageComposeViewController+BlocksKit.h>
+#else
+#import "MFMailComposeViewController+BlocksKit.h"
+#import "MFMessageComposeViewController+BlocksKit.h"
+#endif

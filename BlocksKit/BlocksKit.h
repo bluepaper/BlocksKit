@@ -25,6 +25,7 @@
 //  THE SOFTWARE.
 //
 
+#ifdef BLOCKS_KIT_FRAMEWORK
 #import <BlocksKit/NSArray+BlocksKit.h>
 #import <BlocksKit/NSDictionary+BlocksKit.h>
 #import <BlocksKit/NSIndexSet+BlocksKit.h>
@@ -41,3 +42,21 @@
 #import <BlocksKit/NSSet+BlocksKit.h>
 #import <BlocksKit/NSTimer+BlocksKit.h>
 #import <BlocksKit/BKMacros.h>
+#else
+#import "NSArray+BlocksKit.h"
+#import "NSDictionary+BlocksKit.h"
+#import "NSIndexSet+BlocksKit.h"
+#import "NSInvocation+BlocksKit.h"
+#import "NSMutableArray+BlocksKit.h"
+#import "NSMutableDictionary+BlocksKit.h"
+#import "NSMutableIndexSet+BlocksKit.h"
+#import "NSMutableOrderedSet+BlocksKit.h"
+#import "NSMutableSet+BlocksKit.h"
+#import "NSObject+BKAssociatedObjects.h"
+#import "NSObject+BKBlockExecution.h"
+#import "NSObject+BKBlockObservation.h"
+#import "NSOrderedSet+BlocksKit.h"
+#import "NSSet+BlocksKit.h"
+#import "NSTimer+BlocksKit.h"
+#import "BKMacros.h"
+#endif
